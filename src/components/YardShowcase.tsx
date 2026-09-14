@@ -10,6 +10,7 @@ import {
   ShieldCheck,
   ChevronRight
 } from 'lucide-react';
+import heroImageUrl from '../assets/images/hero_precast_yard_1789404582389.jpg';
 
 export const YardShowcase: React.FC = () => {
   const processSteps = [
@@ -73,8 +74,15 @@ export const YardShowcase: React.FC = () => {
         {/* Production Yard Visual Showcase Banner */}
         <div className="mb-10 relative rounded-2xl overflow-hidden border border-stone-200 shadow-md bg-stone-900 aspect-[16/9] sm:aspect-[24/9] max-h-72">
           <img
-            src="/hero_precast_yard.jpg"
+            src={heroImageUrl}
+            onError={(e) => {
+              const target = e.currentTarget;
+              if (target.src !== '/hero_precast_yard.jpg') {
+                target.src = '/hero_precast_yard.jpg';
+              }
+            }}
             alt="Isinya Precast Limited heavy manufacturing yard and curing basins"
+            referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center"
             loading="lazy"
           />
