@@ -1,0 +1,6 @@
+{
+  "name": "Isinya Precast Limited",
+  "description": "Premier precast concrete manufacturer in Kenya offering culverts, fencing poles, paving slabs, drainage channels, and an interactive quote estimator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
